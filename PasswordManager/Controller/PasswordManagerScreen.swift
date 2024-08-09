@@ -15,41 +15,48 @@ struct PasswordManagerScreen: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                List(accounts) { account in
-                    Button(action: {
-                        print("Button pressed for account: \(account)")
-                        selectedAccount = account
-                        print("Selected account set to: \(String(describing: selectedAccount))")
-                        showingDetail = true
-                    }) {
-                        HStack(spacing: 20) {
-                            Text(account.accountName)
-                                .font(.title2)
-                                .padding()
-                                .frame(width: 170, alignment: .leading)
-                                .foregroundColor(.black)
-                            Text("*****")
-                                .kerning(3)
-                                .font(.title)
-                                .foregroundColor(.gray)
-                            Image(systemName: "arrowshape.right.fill")
-                                .foregroundColor(.black)
+                if accounts.isEmpty {
+                    Text("Add Account")
+                        .font(.title)
+                        .foregroundColor(.gray)
+                        .padding()
+                } else {
+                    List(accounts) { account in
+                        Button(action: {
+                            print("Button pressed for account: \(account)")
+                            selectedAccount = account
+                            print("Selected account set to: \(String(describing: selectedAccount))")
+                            showingDetail = true
+                        }) {
+                            HStack(spacing: 20) {
+                                Text(account.accountName)
+                                    .font(.title2)
+                                    .padding()
+                                    .frame(width: 170, alignment: .leading)
+                                    .foregroundColor(.black)
+                                Text("*****")
+                                    .kerning(3)
+                                    .font(.title)
+                                    .foregroundColor(.gray)
+                                Image(systemName: "arrowshape.right.fill")
+                                    .foregroundColor(.black)
+                            }
+                        }
+                    }
+                    .sheet(isPresented: $showingDetail) {
+                        if let account = selectedAccount {
+                            AccountDetailsScreen(account: account)
+                                .presentationDetents([.fraction(0.75)])
+                                .onDisappear {
+                                    accounts = CoreDataManager.shared.fetchAccounts()
+                                }
+                        } else {
+                            Text("Select another item. We are facing an issue fetching the item.")
+                                .foregroundColor(.red)
                         }
                     }
                 }
-                .sheet(isPresented: $showingDetail) {
-                    if let account = selectedAccount {
-                       
-                        AccountDetailsScreen(account: account)
-                            .presentationDetents([.fraction(0.75)])
-                            .onDisappear {
-                                accounts = CoreDataManager.shared.fetchAccounts()
-                            }
-                    } else {
-                        Text("Select another item. We are facing an issue fetching the item.")
-                            .foregroundColor(.red)
-                    }
-                }
+
                 VStack {
                     Spacer()
                     HStack {
@@ -85,9 +92,21 @@ struct PasswordManagerScreen: View {
             .navigationBarHidden(true)
         }
         .onAppear {
+            if accounts.isEmpty{
+                addDefaultAccounts()
+            }
             accounts = CoreDataManager.shared.fetchAccounts()
             print("Fetched Accounts onAppear: \(accounts)")
         }
+    }
+    
+    // Adding Default Data
+    func addDefaultAccounts(){
+        CoreDataManager.shared.addAccount(accountName: "Google", usernameEmail: "google@gmail.com", password: "google@5566")
+        CoreDataManager.shared.addAccount(accountName: "LikedIn", usernameEmail: "linkedIn@gmail.com", password: "linkedIn@5566")
+        CoreDataManager.shared.addAccount(accountName: "Twitter", usernameEmail: "twitter@gmail.com", password: "twitter@5566")
+        CoreDataManager.shared.addAccount(accountName: "Facebook", usernameEmail: "facebook@gmail.com", password: "facebook@5566")
+        CoreDataManager.shared.addAccount(accountName: "Instagram", usernameEmail: "instagram@gmail.com", password: "instagram@5566")
     }
 }
 
