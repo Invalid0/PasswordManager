@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D6D61972C66334900AB2175 /* AccountDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D61952C66334900AB2175 /* AccountDetails+CoreDataClass.swift */; };
+		7D6D61982C66334900AB2175 /* AccountDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D61962C66334900AB2175 /* AccountDetails+CoreDataProperties.swift */; };
+		7DBCB3AD2C662A8E0025FC64 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCB3AC2C662A8E0025FC64 /* CoreDataManager.swift */; };
+		7DBCB3AF2C662AD40025FC64 /* CoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCB3AE2C662AD40025FC64 /* CoreDataProtocol.swift */; };
+		7DBCB3B52C662E130025FC64 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCB3B32C662E130025FC64 /* Model.xcdatamodeld */; };
 		7DDDA2072C6555270041AACC /* PasswordManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDA2062C6555270041AACC /* PasswordManagerApp.swift */; };
-		7DDDA2092C6555270041AACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDA2082C6555270041AACC /* ContentView.swift */; };
 		7DDDA20B2C6555290041AACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDDA20A2C6555290041AACC /* Assets.xcassets */; };
 		7DDDA20E2C6555290041AACC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DDDA20D2C6555290041AACC /* Preview Assets.xcassets */; };
+		7DDDA2162C65EE1E0041AACC /* AddPasswordScreeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDA2152C65EE1E0041AACC /* AddPasswordScreeen.swift */; };
+		7DDDA2182C65EE8C0041AACC /* PasswordManagerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDA2172C65EE8C0041AACC /* PasswordManagerScreen.swift */; };
+		7DDDA21A2C6610080041AACC /* AccountDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDA2192C6610080041AACC /* AccountDetailsScreen.swift */; };
+		7DDDA21C2C6613B80041AACC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDDA21B2C6613B80041AACC /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D6D61952C66334900AB2175 /* AccountDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7D6D61962C66334900AB2175 /* AccountDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7DBCB3AC2C662A8E0025FC64 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7DBCB3AE2C662AD40025FC64 /* CoreDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProtocol.swift; sourceTree = "<group>"; };
+		7DBCB3B42C662E130025FC64 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7DDDA2032C6555270041AACC /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DDDA2062C6555270041AACC /* PasswordManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerApp.swift; sourceTree = "<group>"; };
-		7DDDA2082C6555270041AACC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7DDDA20A2C6555290041AACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DDDA20D2C6555290041AACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7DDDA2152C65EE1E0041AACC /* AddPasswordScreeen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordScreeen.swift; sourceTree = "<group>"; };
+		7DDDA2172C65EE8C0041AACC /* PasswordManagerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerScreen.swift; sourceTree = "<group>"; };
+		7DDDA2192C6610080041AACC /* AccountDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsScreen.swift; sourceTree = "<group>"; };
+		7DDDA21B2C6613B80041AACC /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,9 @@
 		7DDDA1FA2C6555270041AACC = {
 			isa = PBXGroup;
 			children = (
+				7D6D61952C66334900AB2175 /* AccountDetails+CoreDataClass.swift */,
+				7D6D61962C66334900AB2175 /* AccountDetails+CoreDataProperties.swift */,
+				7DBCB3B32C662E130025FC64 /* Model.xcdatamodeld */,
 				7DDDA2052C6555270041AACC /* PasswordManager */,
 				7DDDA2042C6555270041AACC /* Products */,
 			);
@@ -51,10 +70,12 @@
 		7DDDA2052C6555270041AACC /* PasswordManager */ = {
 			isa = PBXGroup;
 			children = (
+				7DDDA2142C65EDD40041AACC /* Controller */,
 				7DDDA2062C6555270041AACC /* PasswordManagerApp.swift */,
-				7DDDA2082C6555270041AACC /* ContentView.swift */,
 				7DDDA20A2C6555290041AACC /* Assets.xcassets */,
 				7DDDA20C2C6555290041AACC /* Preview Content */,
+				7DBCB3AC2C662A8E0025FC64 /* CoreDataManager.swift */,
+				7DBCB3AE2C662AD40025FC64 /* CoreDataProtocol.swift */,
 			);
 			path = PasswordManager;
 			sourceTree = "<group>";
@@ -65,6 +86,17 @@
 				7DDDA20D2C6555290041AACC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7DDDA2142C65EDD40041AACC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DDDA2152C65EE1E0041AACC /* AddPasswordScreeen.swift */,
+				7DDDA2172C65EE8C0041AACC /* PasswordManagerScreen.swift */,
+				7DDDA2192C6610080041AACC /* AccountDetailsScreen.swift */,
+				7DDDA21B2C6613B80041AACC /* Account.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +169,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DDDA2092C6555270041AACC /* ContentView.swift in Sources */,
+				7DDDA21C2C6613B80041AACC /* Account.swift in Sources */,
+				7DDDA21A2C6610080041AACC /* AccountDetailsScreen.swift in Sources */,
+				7DDDA2162C65EE1E0041AACC /* AddPasswordScreeen.swift in Sources */,
+				7DBCB3B52C662E130025FC64 /* Model.xcdatamodeld in Sources */,
 				7DDDA2072C6555270041AACC /* PasswordManagerApp.swift in Sources */,
+				7DBCB3AD2C662A8E0025FC64 /* CoreDataManager.swift in Sources */,
+				7DBCB3AF2C662AD40025FC64 /* CoreDataProtocol.swift in Sources */,
+				7D6D61972C66334900AB2175 /* AccountDetails+CoreDataClass.swift in Sources */,
+				7D6D61982C66334900AB2175 /* AccountDetails+CoreDataProperties.swift in Sources */,
+				7DDDA2182C65EE8C0041AACC /* PasswordManagerScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +382,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7DBCB3B32C662E130025FC64 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7DBCB3B42C662E130025FC64 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7DBCB3B42C662E130025FC64 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = /Users/darshan/Desktop/PasswordManager/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7DDDA1FB2C6555270041AACC /* Project object */;
 }
