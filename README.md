@@ -10,23 +10,25 @@ View/Edit Password
 Users should be able to view and edit existing passwords, including account details like username/email and password.
 Show List of Passwords on Home Screen
 The home screen of the application displays a list of all saved passwords, showing essential details for each entry.
+
 Delete Password
 Users should be able to delete passwords.
-Technical Requirements
 
+Frame Worked Used
 Encryption
-Implement strong encryption algorithms (e.g., AES, RSA) to secure password data.
+I used apple framework -> CryptoKit, Security.
+
 Database
-Use a secure database (e.g., CoreData) to manage encrypted passwords locally on the device.
+I used Apple framework -> CoreData
+
 User Interface
-Design a clean and intuitive user interface for managing passwords, following the design provided in the Figma link.
+Designed clean and intuitive user interface for managing passwords, following the design provided in the Figma link.
+
 Input Validation
-Implement validation to ensure that mandatory fields are not empty and data is properly formatted.
+Implemented validation to ensure that mandatory fields are not empty and data is properly formatted.
+
 Error Handling
-Properly handle errors and edge cases to ensure a smooth user experience.
-Documentation
-Provide clear instructions on how to build, run, and use the application.
-UI Design
+Properly handle errors.
 
 Design Reference
 Follow the design specifications provided in the Figma link. Ensure that the user interface is intuitive and meets the design requirements.
