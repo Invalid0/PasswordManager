@@ -44,4 +44,9 @@ This project is a secure and user-friendly password manager application. The app
 
 - **Design Reference**
   -  Figma design [Figma link](https://www.figma.com/design/VYkl4ghM04eeaDcTpGo5hh/Password-Manager-App---Mobile-Team-Interview?node-id=0-1&t=qaEembaJuw1tn4EO-0).
+ 
+## Issue/Bug in Application
+
+- There is no actual bug, but first-time users may encounter an "Invalid Fetch" error when accessing the Details Screen. This issue occurs because the necessary data has not yet been initialized or fetched.
+
 
