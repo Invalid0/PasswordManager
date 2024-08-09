@@ -31,10 +31,10 @@ This project is a secure and user-friendly password manager application. The app
    - Use proviede figma link to Design UI.
 
 4. **Input Validation**
-   - Implement validation to ensure that mandatory fields are not empty and data is properly formatted.
+   - Implemented validation to ensure that mandatory fields are not empty and data is properly formatted.
 
 5. **Error Handling**
-   - Properly handle errors and edge cases to ensure a smooth user experience.
+   - Properly handled errors and edge cases to ensure a smooth user experience.
 
 
 ## UI Design
