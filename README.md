@@ -1,5 +1,5 @@
 
-# Mobile App Developer Internship Assignment
+# Mobile App Developer Assignment
 
 ## Project Overview
 
